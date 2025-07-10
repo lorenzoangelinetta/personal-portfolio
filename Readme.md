@@ -15,4 +15,4 @@ Il portfolio è stato sviluppato utilizzando le seguenti tecnologie web:
 - **Bootstrap** – Utilizzato come base di partenza e successivamente modificato per creare un design personalizzato
 
 ## 📄 Licenza
-Il design iniziale si basa su un template Bootstrap (https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/), successivamente modificato:
+Il design iniziale si basa su un template Bootstrap (https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/), successivamente modificato.
