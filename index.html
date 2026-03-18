@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -16,14 +16,13 @@
 		<!-- Icona del sito (favicon) mostrata nel tab del browser -->
 		<link href="img/icon.jpg" rel="icon"> 
 
-		<!-- Collegamenti ai font, icone, css -->
+		<!-- Font, icone, css -->
 		<link href="https://fonts.googleapis.com" rel="preconnect">
 		<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Outfit:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-		<link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+		<link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
 
 		<!-- CSS principale del sito -->
 		<link href="css/main.css" rel="stylesheet">
@@ -34,25 +33,20 @@
 		<div id="particles-js"></div>
 		
 		<!-- Header della pagina a struttura verticale -->
-		<header id="header" class="header d-flex flex-column">
-			
-			<!-- Overlay per la sidebar-->
-			<div class="sidebar-overlay d-xl-none"></div>
+		<i class="header-toggle d-lg-none bi bi-list"></i>
 
-			<!-- Icona per aprire e chiudere la sidebar -->
-			<i class="header-toggle d-xl-none bi bi-list"></i>
-			
-			<!-- Menu di navigazione principale -->
+		<div class="sidebar-overlay"></div>
+
+		<header id="header" class="header">
 			<nav id="navmenu" class="navmenu">
 				<ul>
-					<li><a href="#home" class="active"><i class="bi bi-house navicon"></i><span class="nav-label">Home</span></a></li>
-					<li><a href="#esperienze"><i class="bi bi-briefcase navicon"></i><span class="nav-label">Experiences</span></a></li>
-					<li><a href="#progetti"><i class="bi-folder navicon"></i><span class="nav-label">Projects</span></a></li>
-					<li><a href="#istruzione"><i class="bi bi-mortarboard navicon"></i><span class="nav-label">Instruction</span></a></li>
-					<li><a href="#competenze"><i class="bi-clipboard-check navicon"></i><span class="nav-label">Skills</span></a></li>
+					<li><a href="#home" aria-label="Home" class="active"><i class="bi bi-house navicon"></i></a></li>
+					<li><a href="#esperienze" aria-label="Experiences"><i class="bi bi-briefcase navicon"></i></a></li>
+					<li><a href="#progetti" aria-label="Projects"><i class="bi-folder navicon"></i></a></li>
+					<li><a href="#istruzione" aria-label="Education"><i class="bi bi-mortarboard navicon"></i></a></li>
+					<li><a href="#competenze" aria-label="Skills"><i class="bi-clipboard-check navicon"></i></a></li>
 				</ul>
 			</nav>
-
 		</header>
 
 		<main class="main">
@@ -63,11 +57,11 @@
 					
 					<!-- Nome e sottotitolo (professione) -->
 					<div class="text-center mb-5">
-						<h2>&lt; Lorenzo Angelinetta &gt;</h2>
+						<h2>&lt;Lorenzo Angelinetta&gt;</h2>
 						<p>
 							
 							<!-- Paragrafo dinamico con la professione -->
-							<span class="typed" data-typed-items="Full - Stack Developer, Software Developer, Web Developer"></span>
+							<span class="typed" data-typed-items="Full-Stack Developer, .NET Developer, Software Developer, Web Developer"></span>
 						</p>
 					</div>
 
@@ -78,7 +72,7 @@
 						<span class="email-wrapper">
 							<div class="email-box">
 								<a href="mailto:lorenzoangelinetta@outlook .it?subject=Request for Contact" class="email-link">
-								<i class="fas">📧</i>
+								<i class="fas fa-envelope"></i>
 								<span class="tooltip-text">lorenzoangelinetta@outlook.it</span>
 								</a>
 							</div>
@@ -109,31 +103,50 @@
 						<div>	
 							<!-- Esperienza K2K ss.r.l -->
 							<div class="resume-item">
-								<h4>Full - Stack Developer (C#)</h4>
+								<h4>Full-Stack .Net Developer</h4>
 								<div class="edu-row">
-									<h5><span class="icon-lg">📍</span><em> K2K s.r.l, Como (CO)</em></h5>
-									<h5><span class="icon-lg">📅</span>July 2025 - Now</h5>
+									<h5><span class="icon-lg"><i class="fas fa-location-dot"></i></span><em> K2K s.r.l, Como (CO)</em></h5>
+									<h5><span class="icon-lg"><i class="fas fa-calendar-days"></i></span>July 2025 - Now</h5>
 								</div>
-								<h5><span class="icon-lg">🛠️</span> Technical skills: C#, Python, Radzen, HTML, CSS, Javascript, Git, Docker, MongoDB, Redis and SSMS.</h5>
 								<p class="justify">
-									Development and maintenance of customized software solutions using C# to create interactive platforms and dashboards. 
+									Development and maintenance of customized software solutions using C# to create interactive platforms and dashboards.
 									Integration of front-end technologies such as HTML, CSS, and JavaScript, with a particular focus on Radzen for building dynamic and scalable user interfaces.
+									The back-end is managed using Blazor implementing services, reusable components and coordinating integration
+									with SQL and NoSQL databases for efficient data structuring and management.
 								</p>
+								<div class="tech-badges">
+									<span class="tech-badge">C#</span>
+									<span class="tech-badge">Radzen</span>
+									<span class="tech-badge">HTML</span>
+									<span class="tech-badge">CSS</span>
+									<span class="tech-badge">JavaScript</span>
+									<span class="tech-badge">Python</span>
+									<span class="tech-badge">Git</span>
+									<span class="tech-badge">Docker</span>
+									<span class="tech-badge">MongoDB</span>
+									<span class="tech-badge">Redis</span>
+									<span class="tech-badge">SQL Server</span>
+								</div>
 							</div>
 							<!-- Esperienza Webtek spa -->
 							<div class="resume-item">
 								<h4>School Internship as a Web Developer</h4>
 								<div class="edu-row">
-									<h5><span class="icon-lg">📍</span><em> WebTek SPA, Poggiridenti (SO)</em></h5>
-									<h5><span class="icon-lg">📅</span>May 2021 - June 2021</h5>
+									<h5><span class="icon-lg"><i class="fas fa-location-dot"></i></span><em> WebTek SPA, Poggiridenti (SO)</em></h5>
+									<h5><span class="icon-lg"><i class="fas fa-calendar-days"></i></span>May 2021 - June 2021</h5>
 								</div>
-								<h5><span class="icon-lg">🛠️</span> Technical skills: HTML, CSS, JavaScriptl and WordPress.</h5>
 								<p class="justify">
 									Team development of an information website, in collaboration with Synergie, through the WordPress platform,
 									with the aim of offering support and guidance to young people as they enter the world of work.
 									<br>
 									I contributed in particular to the organization of the contents, the customization of the theme and the care of the graphic interface.
 								</p>
+								<div class="tech-badges">
+									<span class="tech-badge">HTML</span>
+									<span class="tech-badge">CSS</span>
+									<span class="tech-badge">JavaScript</span>
+									<span class="tech-badge">WordPress</span>
+								</div>
 							</div>
 
 						</div>
@@ -159,62 +172,75 @@
 						
 						<!-- Tesi di laurea -->
 						<div class="progetti-item">
-							<div class="d-flex justify-content-center">
-								<img src="img/progetti/tesi.jpg" alt="" class="progetti-img">
-							</div>
-							<h3>Deep Learning and Agentic AI in dermatology</h3>
-							<h4><em><span class="icon-p">📌</span>Thesis</em></h4>
-							<h4><span class="icon-p">🛠️</span>Neural Network, Pytorch, LLM, Agent AI</h4>
-							<p>
-								Development and implementation of Deep Learning models for automatic classification of dermatological images.
-								<br>Several systems have been created that can provide a context to the classification, integrating the models 
-								within an AI Agent, managed by an LLM, which activates the function based on the context.
-							</p>
+							<div class="progetti-top"><img src="img/progetti/tesi.jpg" alt="" class="progetti-img"><div class="progetti-header">
+								<h3>Deep Learning and Agentic AI in dermatology</h3>
+								<span class="progetti-type"><i class="fas fa-thumbtack"></i> Thesis</span>
+							</div></div>
+						<p>
+							Development and implementation of Deep Learning models for automatic classification of dermatological images.
+							<br>Several systems have been created that can provide a context to the classification, integrating the models
+							within an AI Agent, managed by an LLM, which activates the function based on the context.
+						</p>
+							<div class="tech-badges">
+							<span class="tech-badge">Neural Network</span>
+							<span class="tech-badge">Pytorch</span>
+							<span class="tech-badge">LLM</span>
+							<span class="tech-badge">Agent AI</span>
+						</div>
 						</div>
 
 						<!-- Personal Portfolio -->
 						<div class="progetti-item">
-							<div class="d-flex justify-content-center">
-								<img src="img/progetti/sito.jpg" alt="" class="progetti-img">
-							</div>
-							<h3>Personal Portfolio</h3>
-							<h4><em><span class="icon-p">📌</span>Personal project</em></h4>
-							<h4><span class="icon-p">🛠️</span>HTML, CSS, JavaScript, Bootstrap</h4>
-							<p>
+							<div class="progetti-top"><img src="img/progetti/sito.jpg" alt="" class="progetti-img"><div class="progetti-header">
+								<h3>Personal Portfolio</h3>
+								<span class="progetti-type"><i class="fas fa-thumbtack"></i> Personal project</span>
+							</div></div>
+														<p>
 								Personal portfolio that collects information related to the educational path, 
 								technical skills, professional experiences and projects developed. 
 								<br>It is designed to provide a complete and professional overview of the profile.
 							</p>
+							<div class="tech-badges">
+							<span class="tech-badge">HTML</span>
+							<span class="tech-badge">CSS</span>
+							<span class="tech-badge">JavaScript</span>
+							<span class="tech-badge">Bootstrap</span>
+						</div>
 						</div>
 
 						<!-- Climate Monitor -->
 						<div class="progetti-item">
-							<div class="d-flex justify-content-center">
-								<img src="img/progetti/climatemonitor.jpg" alt="" class="progetti-img">
-							</div>
-							<h3>Climate Monitoring</h3>
-							<h4><em><span class="icon-p">📌</span>University project</em></h4>
-							<h4><span class="icon-p">🛠️</span>Java, SQL, Postgres</h4>
-							<p>
+							<div class="progetti-top"><img src="img/progetti/climatemonitor.jpg" alt="" class="progetti-img"><div class="progetti-header">
+								<h3>Climate Monitoring</h3>
+								<span class="progetti-type"><i class="fas fa-thumbtack"></i> University project</span>
+							</div></div>
+														<p>
 								Client-server application that collects and analyzes meteorological data from more than 140,000 countries. 
 								<br>It is possible to use the application in operator mode to collect data and in user mode to consult them, with the possibility of viewing a summary report for each geographical area.
 							</p>
+							<div class="tech-badges">
+							<span class="tech-badge">Java</span>
+							<span class="tech-badge">SQL</span>
+							<span class="tech-badge">Postgres</span>
+						</div>
 						</div>
 
 						<!-- Stormgram -->
 						<div class="progetti-item">
-							<div class="d-flex justify-content-center">
-								<img src="img/progetti/stormgram.jpg" alt="" class="progetti-img">
-							</div>
-							<h3>Stormgram</h3>
-							<h4><em><span class="icon-p">📌</span>School project (high school)</em></h4>
-							<h4><span class="icon-p">🛠️</span>Java (for Android), Firebase</h4>
-							<p>
+							<div class="progetti-top"><img src="img/progetti/stormgram.jpg" alt="" class="progetti-img"><div class="progetti-header">
+								<h3>Stormgram</h3>
+								<span class="progetti-type"><i class="fas fa-thumbtack"></i> School project (high school)</span>
+							</div></div>
+														<p>
 								Mobile application for Android inspired by some of the main features of Instagram. 
 								<br>The app allows users to
 								register an account, post photos, like and save content. It is also possible to search for other users,
 								follow them and send messages, thus replicating the basic functions of a social network.
 							</p>
+							<div class="tech-badges">
+							<span class="tech-badge">Java (Android)</span>
+							<span class="tech-badge">Firebase</span>
+						</div>
 						</div>
 
 					</div>
@@ -227,16 +253,16 @@
 				<div class="container">
 				
 				<!-- Titolo -->
-				<h3 class="resume-title">Instruction</h3>
+				<h3 class="resume-title">Education</h3>
 					<div class="row">
 						<div>
 							
 							<!-- Percorso universitario -->
 							<div class="resume-item">
-								<h4>💻 Bachelor's Degree in Computer Science</h4>
+								<h4><i class="fas fa-laptop-code"></i> Bachelor's Degree in Computer Science</h4>
 								<div class="edu-row">
-									<h5><span class="icon-lg">📍</span><em> University of Insubria, Como (CO)</em></h5>
-									<h5><span class="icon-lg">📅</span></i>&nbsp;&nbsp;2022 - 2025</h5>
+									<h5><span class="icon-lg"><i class="fas fa-location-dot"></i></span><em> University of Insubria, Como (CO)</em></h5>
+									<h5><span class="icon-lg"><i class="fas fa-calendar-days"></i></span>&nbsp;&nbsp;2022 - 2025</h5>
 								</div>
 								<h5><em>Result: 103 / 110</em></h5>
 								<p class="justify">
@@ -255,10 +281,10 @@
 
 							<!-- Percorso scolastico superiori -->
 							<div class="resume-item">
-								<h4>💻 Diploma in Computer Science and Telecommunications</h4>
+								<h4><i class="fas fa-graduation-cap"></i> Diploma in Computer Science and Telecommunications</h4>
 								<div class="edu-row">
-									<h5><span class="icon-lg">📍</span><em> ITC Marco Polo, Colico (LC)</em></h5>
-									<h5><span class="icon-lg">📅</span></i>&nbsp;&nbsp;2017 - 2022</h5>
+									<h5><span class="icon-lg"><i class="fas fa-location-dot"></i></span><em> ITC Marco Polo, Colico (LC)</em></h5>
+									<h5><span class="icon-lg"><i class="fas fa-calendar-days"></i></span>&nbsp;&nbsp;2017 - 2022</h5>
 								</div>
 								<h5><em>Result: 90 / 100</em></h5>
 								<p class="justify">
@@ -284,126 +310,89 @@
 				<h3 class="competenze-title">Skills</h3>
 					
 					<!-- Griglia delle competenze -->
-					<div class="row gy-5 gx-5 justify-content-center">
+					<div class="competenze-grid">
 
 						<!-- Competenze Front-end -->
-						<div class="col-lg-4 col-md-6">
-							<div class="competenze-item">
-								<div>
-									<img src="img/skills/frontend.png" alt="" class="competenze-img">
-								</div>
-								<h3>Front-end</h3>
-								<hr class="competenze-separator">
-								<div>
-									<ul>
-										<li><i class="bi bi-check2"></i> JavaScript</li>
-										<li><i class="bi bi-check2"></i> HTML </li>
-										<li><i class="bi bi-check2"></i> CSS</li>
-										<li><i class="bi bi-check2"></i> Bootstrap</li>
-										<li><i class="bi bi-check2"></i> Radzen</li>
-									</ul>
-								</div>					
-							</div>
+						<div class="competenze-item">
+							<div class="competenze-icon"><i class="fas fa-code"></i></div>
+							<h3>Front-end</h3>
+							<hr class="competenze-separator">
+							<ul>
+								<li>JavaScript</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Bootstrap</li>
+								<li>Radzen</li>
+							</ul>
 						</div>
 
 						<!-- Competenze Back-end -->
-						<div class="col-lg-4 col-md-6 ">
-							<div class="competenze-item position-relative ">
-								<div>
-									<img src="img/skills/backend.png" alt="" class="competenze-img ">
-								</div>
-								<h3>Back-end</h3>
-								<hr class="competenze-separator">
-								<div>
-									<ul>
-										<li><i class="bi bi-check2"></i> C# </li>
-										<li><i class="bi bi-check2"></i> PHP </li>
-									</ul>
-								</div>					
-							</div>
+						<div class="competenze-item">
+							<div class="competenze-icon"><i class="fas fa-server"></i></div>
+							<h3>Back-end</h3>
+							<hr class="competenze-separator">
+							<ul>
+								<li>C#</li>
+								<li>PHP</li>
+							</ul>
 						</div>
 
 						<!-- Competenze db -->
-						<div class="col-lg-4 col-md-6"  >
-							<div class="competenze-item position-relative">
-								<div>
-									<img src="img/skills/database.png" alt="" class="competenze-img">
-								</div>
-								<h3>Database</h3>
-								<hr class="competenze-separator">
-								<div>
-									<ul>
-										<li><i class="bi bi-check2"></i> SQL </li>
-										<li><i class="bi bi-check2"></i> MySQL</li>
-										<li><i class="bi bi-check2"></i> MongoDB</li>
-										<li><i class="bi bi-check2"></i> Redis</li>
-										<li><i class="bi bi-check2"></i> SSMS</li>
-										<li><i class="bi bi-check2"></i> PostgreSQL</li>
-										<li><i class="bi bi-check2"></i> FireBase</li>
-									</ul>
-								</div>					
-							</div>
+						<div class="competenze-item">
+							<div class="competenze-icon"><i class="fas fa-database"></i></div>
+							<h3>Database</h3>
+							<hr class="competenze-separator">
+							<ul>
+								<li>SQL</li>
+								<li>MySQL</li>
+								<li>SQL Server</li>
+								<li>MongoDB</li>
+								<li>Redis</li>
+								<li>PostgreSQL</li>
+								<li>FireBase</li>
+							</ul>
 						</div>
 
 						<!-- Competenze Linguaggi -->
-						<div class="col-lg-4 col-md-6"  >
-							<div class="competenze-item position-relative">
-								<div>
-									<img src="img/skills/linguaggi.png" alt="" class="competenze-img">
-								</div>
-								<h3>Languages</h3>
-								<hr class="competenze-separator">
-								<div>
-									<ul>
-										<li><i class="bi bi-check2"></i> Python</li>
-										<li><i class="bi bi-check2"></i> Java</li>
-										<li><i class="bi bi-check2"></i> C# </li>
-										<li><i class="bi bi-check2"></i> C </li>
-										<li><i class="bi bi-check2"></i> C++</li>
-									</ul>
-								</div>					
-							</div>
+						<div class="competenze-item">
+							<div class="competenze-icon"><i class="fas fa-terminal"></i></div>
+							<h3>Languages</h3>
+							<hr class="competenze-separator">
+							<ul>
+								<li>Python</li>
+								<li>Java</li>
+								<li>C#</li>
+								<li>C / C++</li>
+							</ul>
 						</div>
 
-						<!-- Competenze ai -->
-						<div class="col-lg-4 col-md-6"  >
-							<div class="competenze-item position-relative">
-								<div>
-									<img src="img/skills/ai.png" alt="" class="competenze-img">
-								</div>
-								<h3>AI</h3>
-								<hr class="competenze-separator">
-								<div>
-									<ul>
-										<li><i class="bi bi-check2"></i> Machine Learning</li>
-										<li><i class="bi bi-check2"></i> Neural Networks</li>
-										<li><i class="bi bi-check2"></i> Pytorch</li>
-										<li><i class="bi bi-check2"></i> LLM </li>
-										<li><i class="bi bi-check2"></i> Agent AI</li>
-									</ul>
-								</div>					
-							</div>
+						<!-- Competenze AI -->
+						<div class="competenze-item">
+							<div class="competenze-icon"><i class="fas fa-brain"></i></div>
+							<h3>AI</h3>
+							<hr class="competenze-separator">
+							<ul>
+								<li>Machine Learning</li>
+								<li>Neural Networks</li>
+								<li>Pytorch</li>
+								<li>LLM / VLM</li>
+								<li>Agent AI</li>
+							</ul>
 						</div>
 
 						<!-- Competenze tools & altro -->
-						<div class="col-lg-4 col-md-6"  >
-							<div class="competenze-item position-relative">
-								<div>
-									<img src="img/skills/altro.png" alt="" class="competenze-img">
-								</div>
-								<h3>Tools & Other</h3>
-								<hr class="competenze-separator">
-								<div>
-									<ul>
-										<li><i class="bi bi-check2"></i> VS and VS Code </li>
-										<li><i class="bi bi-check2"></i> Git </li>
-										<li><i class="bi bi-check2"></i> Docker </li>
-										<li><i class="bi bi-check2"></i> phpMyAdmin </li>
-										<li><i class="bi bi-check2"></i> 3d printing </li>
-										<li><i class="bi bi-check2"></i> Arduino </li>
-									</ul>
-								</div>					
-							</div>
+						<div class="competenze-item">
+							<div class="competenze-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+							<h3>Tools &amp; Other</h3>
+							<hr class="competenze-separator">
+							<ul>
+								<li>VS / VS Code</li>
+								<li>Git</li>
+								<li>Docker</li>
+								<li>Azure DevOps</li>
+								<li>3D Printing</li>
+								<li>Arduino</li>
+							</ul>
 						</div>
 
 					</div>
@@ -415,58 +404,20 @@
 		<!-- Footer -->
 		<footer id="footer" class="footer position-relative text-center">
 			<div class="copyright text-center">
-				<p> © <span>Copyright 2025 - Angelinetta Lorenzo</span> </p>
+				<p> © <span>Copyright 2026 - Angelinetta Lorenzo</span> </p>
 			</div>
 		</footer>
 
-		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"></a>
+		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 		<!-- Preloader mostrato prima che la pagina sia completamente caricata -->
 		<div id="preloader"></div>
 		
-		<!-- Script di librerie esterne -->
+		<!-- Script -->
 		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="vendor/typed.js/typed.umd.js"></script><!-- SERVE PER PROJECTS -->
-		<script src="vendor/purecounter/purecounter_vanilla.js"></script> <!-- SERVE PER PROJECTS -->
-		<script src="vendor/glightbox/js/glightbox.min.js"></script> <!-- SERVE PER EVIDENZIARE NAVMENU -->
-
-		<!-- Script per lo sfondo -->
+		<script src="vendor/typed.js/typed.umd.js"></script>
 		<script src="js/main.js"></script>
-		<script src="particles.js"></script>
 		<script src="js/app.js"></script>
-		
-		<!-- Script per menu navbar su mobile -->
-		<script>
-				document.addEventListener("DOMContentLoaded", function () {
-					const toggle = document.querySelector(".header-toggle");
-					const header = document.querySelector(".header");
-					const overlay = document.querySelector(".sidebar-overlay");
-
-					function toggleSidebar() {
-					header.classList.toggle("expanded");
-					overlay.classList.toggle("active");
-
-					// Cambia icona
-					if (header.classList.contains("expanded")) {
-						toggle.classList.remove("bi-list");
-						toggle.classList.add("bi-x");
-					} else {
-						toggle.classList.remove("bi-x");
-						toggle.classList.add("bi-list");
-					}
-					}
-
-					toggle.addEventListener("click", toggleSidebar);
-
-					// Chiudi cliccando sull'overlay
-					overlay.addEventListener("click", () => {
-					header.classList.remove("expanded");
-					overlay.classList.remove("active");
-					toggle.classList.remove("bi-x");
-					toggle.classList.add("bi-list");
-					});
-				});
-		</script>
 
 	</body>
 </html>
